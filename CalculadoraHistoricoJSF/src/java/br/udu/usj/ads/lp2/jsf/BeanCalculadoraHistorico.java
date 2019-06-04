@@ -8,7 +8,8 @@ package br.udu.usj.ads.lp2.jsf;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.faces.bean.RequestScoped;
+import javax.faces.bean.ApplicationScoped;
+//import javax.faces.bean.RequestScoped;
 import javax.faces.bean.ManagedBean;
         
 /**
@@ -16,7 +17,8 @@ import javax.faces.bean.ManagedBean;
  * @author Paulo_Alves
  */
 @ManagedBean
-@RequestScoped
+//@RequestScoped
+@ApplicationScoped
 
 public class BeanCalculadoraHistorico {
 
