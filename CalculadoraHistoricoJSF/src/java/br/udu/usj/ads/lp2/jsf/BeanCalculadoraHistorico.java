@@ -8,10 +8,9 @@ package br.udu.usj.ads.lp2.jsf;
 
 import java.util.ArrayList;
 import java.util.List;
-//import javax.faces.bean.ApplicationScoped;
+import javax.faces.bean.ApplicationScoped;
 //import javax.faces.bean.RequestScoped;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
         
 /**
  *
@@ -19,9 +18,7 @@ import javax.faces.bean.SessionScoped;
  */
 @ManagedBean
 //@RequestScoped
-//@ApplicationScoped
-@SessionScoped
-
+@ApplicationScoped
 public class BeanCalculadoraHistorico {
 
     
@@ -57,8 +54,13 @@ public class BeanCalculadoraHistorico {
     //}
     
     public void somar(){
-    int resultado = a+b ;
-    historico.add(a + "+" + b +"=" + resultado);
+    int resultado = a-b ;
+    historico.add(a + "-" + b +"=" + resultado);
+    
     }
+public void limpar(){
+    historico.clear();
+}
+
 }
   
